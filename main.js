@@ -1,4 +1,4 @@
-const arr = [1,3,4,5,8,9];
+const arr = [1,3,4,5,8,10];
 
 const newArr = arr.map((item, index) => {
     return item + index; 
@@ -12,3 +12,8 @@ const sum = arr.reduce((total,next) =>
 
 console.log(sum);
 
+const filter = arr.filter(item=>
+     item % 2 === 0
+)
+
+console.log(filter);
