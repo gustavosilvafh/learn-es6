@@ -1,10 +1,20 @@
 "use strict";
 
-var soma = function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  return a + b;
+var usuario = {
+  nome: 'Gustavo',
+  idade: 18,
+  endereco: {
+    cidade: 'Guarapuava',
+    estado: 'SP'
+  }
 };
 
-console.log(soma(2));
-console.log(soma());
+const {nome, idade, endereco: {cidade} } = usuario;
+
+
+function mostraUsuario(arrayDeUsuario){
+  return `Usuário: ${nome} \n Idade: ${idade} \n Cidade: ${cidade}`;
+
+}
+
+console.log(mostraUsuario(usuario));

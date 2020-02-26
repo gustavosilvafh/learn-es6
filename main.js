@@ -1,5 +1,10 @@
-const soma = (a = 1, b = 1)=>  a + b;
+const usuario = {
+    nome: 'Gustavo',
+    idade: 18,
+    endereço: {
+        cidade: 'Guarapuava',
+        estado: 'SP',
+    },
+}
 
-console.log(soma(2));
-console.log(soma());
-
+console.log(usuario);
