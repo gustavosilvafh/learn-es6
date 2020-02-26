@@ -1,10 +1,9 @@
-const usuario = {
-    nome: 'Gustavo',
-    idade: 18,
-    endereço: {
-        cidade: 'Guarapuava',
-        estado: 'SP',
-    },
-}
+// REST
 
-console.log(usuario);
+const usuario = {nome: 'Gustavo', idade: 18, empresa: 'HalleyCode'}
+
+const { nome, ...resto} = usuario;
+
+console.log(nome);
+console.log(resto);
+
