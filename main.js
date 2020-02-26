@@ -1,4 +1,5 @@
-const arr = [1,3,4,5,8,10];
+const soma = (a = 1, b = 1)=>  a + b;
 
-const newArr = arr.map((item, index) => item + index)
+console.log(soma(2));
+console.log(soma());
 
