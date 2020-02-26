@@ -1,10 +1,7 @@
 "use strict";
 
-function teste(x) {
-  var y = 2;
-  if (x > 5) console.log(x, y);
-}
-
-document.getElementById('adicionaTodo').onclick = function () {
-  teste(6, 2);
-};
+var arr = [1, 3, 4, 5, 8, 9];
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(newArr);
