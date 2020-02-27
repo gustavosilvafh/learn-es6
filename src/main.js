@@ -3,8 +3,10 @@ const minhaPromise = () => new Promise((resolve, reject) => {
 });
 
 async function executaPromisse(){
-    const response = await minhaPromise();
-    console.log(response);
+
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
     
 }
 
