@@ -4,6 +4,8 @@ const minhaPromise = () => new Promise((resolve, reject) => {
 
 async function executaPromisse(){
     const response = await minhaPromise();
+    console.log(response);
+    
 }
 
 executaPromisse();
