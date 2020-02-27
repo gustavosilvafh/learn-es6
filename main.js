@@ -1,11 +1,10 @@
-// REST
+//template literals
 
-const arr = [1, 2, 3, 4];
+const nome = "Gustavo";
+const idade = "18"
 
-const [a, b, ...c] = arr;
+// Normal
+// console.log('Meu nome é' + nome + 'e tenho ' + idade + 'anos');
 
-console.log(a);
-console.log(b);
-console.log(c);
-
-
+//Template String
+console.log(`Meu nome é ${nome} e eu tenho ${idade} anos`);

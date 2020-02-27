@@ -1,10 +1,9 @@
 "use strict";
 
-// REST
-var arr = [1, 2, 3, 4];
-var a = arr[0],
-    b = arr[1],
-    c = arr.slice(2);
-console.log(a);
-console.log(b);
-console.log(c);
+//template literals
+var nome = "Gustavo";
+var idade = "18"; // Normal
+// console.log('Meu nome é' + nome + 'e tenho ' + idade + 'anos');
+//Template String
+
+console.log("Meu nome \xE9 ".concat(nome, " e eu tenho ").concat(idade, " anos"));
