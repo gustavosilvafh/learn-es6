@@ -1,10 +1,20 @@
-//template literals
 
-const nome = "Gustavo";
-const idade = "18"
+const nome = 'Gustavo';
+const idade = 18;
 
-// Normal
-// console.log('Meu nome é' + nome + 'e tenho ' + idade + 'anos');
+// Maneira antiga
+// const usuario = {
+//     nome: nome,
+//     idade: idade,
+//     empresa: 'Halley Code',
+// };
 
-//Template String
-console.log(`Meu nome é ${nome} e eu tenho ${idade} anos`);
+
+// Es6
+const usuario = {
+    nome,
+    idade,
+    empresa: 'Halley Code',
+};
+
+console.log(usuario);
