@@ -3,9 +3,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        li{
+            clear: both;
+            margin-top: 20px;
+        }
+
+        img{
+            width: 80px;
+            float: left;
+            margin: 10px;
+        }
+        strong{
+            font-size: 20px;
+
+        }
+        p{
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <button id="adicionaTodo">Adicionar</button>
+    <form id="repo-form">
+        <input type="text" name="repository"/>
+        <button type="submit">Adiciona</button>
+    </form>
+
+    <ul id="repo-list">
+            <li>
+            <img src="https://avatars3.githubusercontent.com/u/54293843?v=4" alt="">
+            <strong>Gustavo Silva</strong>
+            <p>Estou começando a programar!</p>
+            <a href="https://github.com/SilvaWT/">Acessar repositório</a>
+        </li>
+    </ul>
+
     <script src="./bundle.js"></script>
 </body>
 </html>
