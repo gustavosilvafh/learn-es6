@@ -33,7 +33,8 @@ class App {
             avatar_url,
             html_url,
         });
-
+        this.inpputEl.value = '';
+        
         this.render();
         
     }
